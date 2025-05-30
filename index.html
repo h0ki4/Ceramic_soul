@@ -15,7 +15,6 @@
     />
   </head>
   <body>
-    <script type="module" src="/src/js/script.js"></script>
     <section class="promo">
       <img src="/src/img/promo/potter.jpg" alt="potter" class="promo__potter" />
       <div class="container">
@@ -101,13 +100,13 @@
         <h2 class="title-h2">get in touch</h2>
         <div class="pure-g touch__wrapper">
           <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-2-5">
-            <img src="/src/img/form/tea.jpg" alt="tea" class="touch__img" />
+            <img class="touch__img" src="/src/img/form/tea.jpg" alt="tea" />
           </div>
           <div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5">
-            <form action="#">
+            <form class="touch__form" action="#">
               <fieldset class="touch__fieldset">
                 <div class="touch__input-block">
-                  <label class="touch__label" for="">Name</label>
+                  <label class="touch__label" for="name">Name</label>
                   <input
                     class="touch__input"
                     type="text"
@@ -118,7 +117,7 @@
                   />
                 </div>
                 <div class="touch__input-block">
-                  <label class="touch__label" for="">Email</label>
+                  <label class="touch__label" for="email">Email</label>
                   <input
                     class="touch__input"
                     type="email"
@@ -132,28 +131,55 @@
               <label class="touch__label" for="question">Your question</label>
               <textarea
                 class="touch__textarea"
-                placeholder="Question"
                 name="question"
                 id="question"
+                placeholder="Question"
                 required
               ></textarea>
-              <label class="touch__label touch__check-block" for="checkbox"
-                ><input
+
+              <label class="touch__label touch__check-block" for="checkbox">
+                <input
                   required
                   class="touch__checkbox"
                   type="checkbox"
                   id="checkbox"
                 />
-                I agree width the <a href="#">terms</a></label
+                I agree with the <a href="#">terms</a></label
               >
+
               <button class="btn-send touch__btn">send request</button>
-              <div class="pure-u-md-1-1">
-                <img src="/src/img/form/vase.png" alt="vase" />
-              </div>
             </form>
           </div>
+        </div>
+        <img src="/src/img/form/vase.png" alt="vase" class="touch__decor" />
+      </div>
+    </section>
+    <section class="works">
+      <div class="container">
+        <h2 class="title-h2">check out our works</h2>
+        <div class="works_wrapper">
+          <div class="swiper works__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/src/img/works/tea-1.jpg" alt="tea-1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/works/tea-2.jpg" alt="tea-2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/works/tea-3.jpg" alt="tea-3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/src/img/works/tea-1.jpg" alt="tea-1" />
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <button class="icon-left-open works__slider-nav"></button>
+          <button class="icon-right-open works__slider-nav"></button>
         </div>
       </div>
     </section>
   </body>
+  <script type="module" src="/src/js/script.js"></script>
 </html>
